@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.rschina.heilongjiang"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1011
+        versionName "0.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+ /*   productFlavors{
+
+
+        Shanghai{
+            applicationIdSuffix ".shanghai"
+            resValue "string", "appName", "遥感上海"
+            versionCode 1003
+            versionName "0.0.3"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_lancher_shanghai"
+            ]
+        }
+        Shanghai{
+            applicationIdSuffix ".shanghai"
+            resValue "string", "appName", "遥感上海"
+            versionCode 1003
+            versionName "0.0.3"
+            manifestPlaceholders = [
+                    appIcon: "@drawable/ic_lancher_shanghai"
+            ]
+        }
+
+    }*/
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':mapSDK')
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.jakewharton.timber:timber:4.3.1'
+    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    compile 'cn.aigestudio.downloader:Downloader:1.4.3'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'org.litepal.android:core:1.3.2'
+
+    compile 'com.lovedise:permissiongen:0.0.6'
+}
+apt {
+    arguments {
+        eventBusIndex "com.rschina.heilongjiang.MyEventBusIndex"
+    }
+}

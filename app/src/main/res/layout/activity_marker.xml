@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/marker_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/back_normal" />
+
+        <TextView
+            android:id="@+id/marker_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_toEndOf="@+id/iv_back"
+            android:text="自定义订阅名称"
+            android:textColor="@color/headbar_textcolor" />
+    </LinearLayout>
+
+
+    <EditText
+        android:maxLength="15"
+        android:id="@+id/et_name"
+        android:background="@drawable/image_markers"
+        android:layout_marginTop="20dp"
+        android:hint="请输入名称"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:maxLength="20"
+        android:id="@+id/et_beizhu"
+        android:background="@drawable/image_markers"
+        android:layout_marginTop="35dp"
+        android:hint="请输入备注信息,备注字数不超过20字"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/marker_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="给当前备注命名,方便后续查看 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/marker_cance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18dp"
+               />
+            <View
+                android:background="#33000000"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="#ffffff"
+                android:id="@+id/marker_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

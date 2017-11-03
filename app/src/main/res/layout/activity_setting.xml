@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >  
+		
+	<RelativeLayout
+		android:id="@+id/top_feedback"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="#333333"
+		android:gravity="center_vertical"
+		android:padding="0.0px" >
+
+		<ImageView
+			android:clickable="true"
+			android:id="@+id/setting_back"
+			android:layout_width="50dp"
+ 			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:padding="10dip"
+			android:src="@drawable/back_normal" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:singleLine="true"
+			android:gravity="center"
+			android:text="设置"
+	        android:textColor="#FFFFFF"
+        	android:textSize="22dp"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentStart="true" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_gravity="center_vertical"
+		android:background="#10ffffff" >
+
+		<TextView
+			android:layout_marginLeft="15dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp"
+			android:text="横屏展示"
+			android:textColor="#000000"
+			android:textSize="18dp"
+			android:layout_marginStart="15dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentStart="true" />
+
+		<ImageView
+			android:id="@+id/direction"
+			android:src="@drawable/close"
+			android:clickable="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="20dp"
+			android:textColor="#FFD817"
+			android:textSize="10sp" />
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#33000000"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_gravity="center_vertical"
+		android:background="#10ffffff">
+
+		<TextView
+			android:id="@+id/wifi"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="15dp"
+			android:layout_toRightOf="@+id/iv_clean"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp"
+			android:text="Wifi环境下自动更新"
+			android:textColor="#000000"
+			android:textSize="18dp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="20dp"
+			android:clickable="true"
+			android:src="@drawable/open"
+			android:textColor="#FFD817"
+			android:textSize="10sp" />
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:background="#33000000"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_gravity="center_vertical"
+		android:background="#10ffffff" >
+
+		<TextView
+			android:layout_marginLeft="15dp"
+			android:layout_toRightOf="@+id/iv_clean"
+			android:id="@+id/version"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="10dp"
+			android:paddingTop="10dp"
+			android:text="版本更新"
+			android:layout_centerVertical="true"
+			android:textColor="#000000"
+			android:textSize="18dp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="20dp"
+			android:text="暂无版本更新"
+			android:textSize="18dp" />
+	</RelativeLayout>
+
+
+	<LinearLayout
+		android:background="#faf4f4"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</LinearLayout>
+
+</LinearLayout> 

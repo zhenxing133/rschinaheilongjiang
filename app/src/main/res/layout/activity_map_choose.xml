@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerBar"
+        layout="@layout/headbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/background_grey"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示：1、单选一期影像可直接查阅；"
+            android:textColor="@color/text_selected"/>
+      <!--  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="2、最多选择两期，并自动进入影像对比。"
+            android:textColor="@color/text_selected"/>-->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/map_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <TextView
+        android:id="@+id/choose_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/confirm"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/colorPressed"/>
+
+</LinearLayout>

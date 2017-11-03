@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">实时黑龙江</string>
+    <string name="confirm">确认选择</string>
+    <string name="cancle">取消</string>
+    <string name="map_transparent_rate">透明度 : %1$d%%</string>
+    <string name="base_map_selected">已选择底图 : %1$s</string>
+    <string name="update_title">发现新版本，是否要更新？</string>
+    <string name="map_water">水域面积</string>
+    <string name="map_city_greening">城市绿化</string>
+    <string name="map_city_building">城市建筑</string>
+    <string name="tab_sate_map">镶嵌影像</string>
+    <string name="tab_monitor">监测服务</string>
+</resources>

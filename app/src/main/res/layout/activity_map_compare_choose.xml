@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/headbar"
+    android:id="@+id/headerBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_baseMap_selected"
+            android:layout_marginLeft="5dp"
+            android:textColor="#77000000"
+            android:text="提示:叠加底图有利于查阅信息产品中的变化信息"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/map_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/choose_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/confirm"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/colorPressed"/>
+  
+</LinearLayout>

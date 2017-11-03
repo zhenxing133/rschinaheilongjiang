@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPressed">#1e88f5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="backgroud_bar">#04b2f2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 地图头部背景颜色 -->
+    <color name="map_header">#33333333</color>
+
+    <color name="headbar_textcolor">#ffffff</color>
+    <color name="choose_confirm">#f9e634</color>
+    <color name="report_choose">#ffff00</color>
+    <color name="text_black">#333333</color>
+    <color name="background_grey">#f1f1f1</color>
+    <color name="text_normal">#666666</color>
+    <color name="text_selected">#000000</color>
+
+    <color name="shape_pressed">#ffff00</color>
+    <color name="shape_selected">#222222</color>
+    <color name="shape_normal">#ffffff</color>
+</resources>
